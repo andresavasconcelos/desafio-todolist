@@ -9,6 +9,6 @@ public interface ITodoService {
     Todo create(Todo todo);
     Todo update(Todo todo);
     List<Todo> listAll();
-    Todo listByName(String name);
+    Todo findByName(String name);
     void delete(Todo todo);
 }

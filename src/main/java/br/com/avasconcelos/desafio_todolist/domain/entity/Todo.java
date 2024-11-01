@@ -1,7 +1,6 @@
 package br.com.avasconcelos.desafio_todolist.domain.entity;
 
 import jakarta.persistence.*;
-import jakarta.persistence.criteria.CriteriaBuilder;
 
 @Entity
 @Table(name = "todos")
@@ -23,6 +22,17 @@ public class Todo {
 
     @Column(name = "priority")
     private Integer priority;
+
+    public Todo() {
+        super();
+    }
+
+    public Todo(String name, String description, Boolean realized, Integer priority) {
+        this.name = name;
+        this.description = description;
+        this.realized = realized;
+        this.priority = priority;
+    }
 
     public Integer getId() {
         return id;

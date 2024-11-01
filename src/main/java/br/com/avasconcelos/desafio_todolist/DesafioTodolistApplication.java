@@ -1,4 +1,4 @@
-package br.com.avasconcelos.desafio_todolist.application;
+package br.com.avasconcelos.desafio_todolist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

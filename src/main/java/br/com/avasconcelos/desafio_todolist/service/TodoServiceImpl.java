@@ -34,7 +34,7 @@ public class TodoServiceImpl implements ITodoService{
     }
 
     @Override
-    public Todo listByName(String name) {
+    public Todo findByName(String name) {
         return repository.findByName(name);
     }
 
